@@ -45,7 +45,7 @@ Like 'ggplot2', 'dplyr' is an additional package which is part of the 'tidyverse
 library(learnr)
 library(dplyr)
 tutorial_options(exercise.timelimit = 10)
-options(max.print=100)
+options(max.print=1000)
 imdb <- readRDS("imdb2021.RDS")
 ```
 
@@ -90,10 +90,7 @@ DT::datatable(imdb[sample(1:31529,50),])
 
 ```
 
-For the rest of this workbook, we limited the number of lines of each output to 50 as well. So in some cases the output may be longer than what is being displayed. We figured that you and our server wouldn't mind not having the 30,000 rows of data outputted each time you try a new command or made a mistake!
-
-
-
+For the rest of this workbook, we limited the number of rows which get displayed under the code chunks to be no more than 1000. So in some cases the output may be longer than what is being displayed (if it tells you there is exactly 1000 rows then it will almost certainly be longer). 
 
 
 
